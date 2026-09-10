@@ -1,0 +1,50 @@
+{
+  "request_id": "work-114cfd3a7836e5c8881adfce",
+  "group_id": "G01_RADIAL_FV",
+  "purpose": "Download refresh only; no numerical recomputation or change to scientific acceptance.",
+  "parts": [
+    {
+      "filename": "G01_download_new_01_of_06.zip",
+      "bytes": 79734291,
+      "sha256": "c7fa409e35ccea4822cbdb0df13846d0519dbe974b93301b9ff115215efaefac",
+      "crc_pass": true,
+      "matches_previous_part": true
+    },
+    {
+      "filename": "G01_download_new_02_of_06.zip",
+      "bytes": 79736433,
+      "sha256": "f1ebb01c0ccb4d1ad2563463d321e167d75b07b39a8e19fe47058c0e9beb5e76",
+      "crc_pass": true,
+      "matches_previous_part": true
+    },
+    {
+      "filename": "G01_download_new_03_of_06.zip",
+      "bytes": 79736294,
+      "sha256": "ea213eadf4d8488e1bfa76d3d740caa3a2ef88687ba18f798a83cd717adb11df",
+      "crc_pass": true,
+      "matches_previous_part": true
+    },
+    {
+      "filename": "G01_download_new_04_of_06.zip",
+      "bytes": 79736238,
+      "sha256": "26b848680c6faaac2347611caad72be7163e94cb2739ff52006f5847782b8264",
+      "crc_pass": true,
+      "matches_previous_part": true
+    },
+    {
+      "filename": "G01_download_new_05_of_06.zip",
+      "bytes": 79736096,
+      "sha256": "25714ca360857bf927ba5be482875aa6187297663a59db92d367f3ec1036a9c7",
+      "crc_pass": true,
+      "matches_previous_part": true
+    },
+    {
+      "filename": "G01_download_new_06_of_06.zip",
+      "bytes": 20907142,
+      "sha256": "8e80fdffc6fc2468068dd2a91772b2a0c5e7bd015069998aa0c30d4ac071822d",
+      "crc_pass": true,
+      "matches_previous_part": true
+    }
+  ],
+  "scientific_precision_passed": false
+}
