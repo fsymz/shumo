@@ -1,0 +1,27 @@
+{
+  "group_id": "G04_AXIS_CELL_FV",
+  "request_id": "work-37eddf34b0f989c306e6b713",
+  "batch": "20260910T173058Z",
+  "model": "GPT-6 Astra Pro",
+  "session_label": "G04_work-37eddf34b0f989c306e6b713_20260910T173058Z",
+  "platform_session_id": null,
+  "source_strategy_ids": [
+    "S04"
+  ],
+  "original_strategy_sha256": "34ca475f1c76e657361e473db5704315817ca7d8c67152af2c1c229ee74f329b",
+  "input_zip_sha256": "6748ebdda17a610e87a61250ca9703ce0f569878f699832b76826a680b4b56dc",
+  "initial_inventory": "Only attached task archive present in /mnt/data; no previous production code, work_delivery, result or execution receipts available. All integrations in this batch are new.",
+  "github_repository": "fsymz/shumo",
+  "github_directory": "deliveries/stage03/G04_AXIS_CELL_FV/20260910T173058Z",
+  "prior_context_used_as_evidence": false,
+  "other_group_content_read": false,
+  "startup_template_result": "passed; EMPTY_TEMPLATE_CREATED_NOT_VALIDATED; 18 original input files copied",
+  "release_upload_status": "not_attempted; no release-asset upload action discovered; no gh or GITHUB_TOKEN in compute runtime",
+  "stages": {
+    "input_inventory": "complete",
+    "production_implementation": "in_progress",
+    "integration": "not_started",
+    "packaging": "not_started",
+    "remote_formal_delivery": "not_started"
+  }
+}
