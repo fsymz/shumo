@@ -1,0 +1,42 @@
+name: G01 receiver connectivity second attempt (NOT formal delivery)
+on:
+  push:
+    paths: ['.github/workflows/stage03_g01_20260910T173132Z_direct_receiver_probe2.yml']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Receive harmless predetermined probe only
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          cat > /tmp/probe.py <<'PY'
+          import os,json,time,hashlib,base64,urllib.request
+          from http.server import HTTPServer,BaseHTTPRequestHandler
+          data=b'G01 direct receiver probe 20260910\n'
+          repo=os.environ['REPO'];path='deliveries/stage03/G01_RADIAL_FV/20260910T173132Z-114cfd3a/transport/direct_probe2_endpoint.json'
+          with urllib.request.urlopen('https://api.ipify.org',timeout=20) as r:ip=r.read().decode().strip()
+          h={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'}
+          def write(s,sha=None):
+              b={'message':'G01 harmless connectivity observation only','content':base64.b64encode((json.dumps(s,indent=2)+'\n').encode()).decode()}
+              if sha:b['sha']=sha
+              req=urllib.request.Request('https://api.github.com/repos/'+repo+'/contents/'+path,data=json.dumps(b).encode(),headers=h,method='PUT')
+              with urllib.request.urlopen(req,timeout=30) as r:return json.load(r)['content']['sha']
+          s={'endpoint':'http://'+ip+':443/g01-probe','expires_unix':time.time()+300,'accepted':False,'probe_only':True,'formal_delivery_uploaded':False}
+          class H(BaseHTTPRequestHandler):
+              def do_POST(self):
+                  if self.path!='/g01-probe' or int(self.headers.get('Content-Length','0'))!=len(data):self.send_error(400);return
+                  if self.rfile.read(len(data))!=data:self.send_error(400);return
+                  s['accepted']=True;b=json.dumps({'accepted':True,'sha256':hashlib.sha256(data).hexdigest()}).encode()
+                  self.send_response(200);self.send_header('Content-Length',str(len(b)));self.end_headers();self.wfile.write(b)
+              def log_message(self,*a):pass
+          server=HTTPServer(('0.0.0.0',443),H);server.timeout=2;sha=write(s)
+          while not s['accepted'] and time.time()<s['expires_unix']:server.handle_request()
+          server.server_close();s['finished_unix']=time.time();write(s,sha);print(json.dumps(s),flush=True)
+          raise SystemExit(0 if s['accepted'] else 2)
+          PY
+          sudo -E python3 /tmp/probe.py
