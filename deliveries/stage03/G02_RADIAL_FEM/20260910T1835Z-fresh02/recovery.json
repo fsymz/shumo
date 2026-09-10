@@ -1,0 +1,13 @@
+{
+  "request_id": "work-d8e7e514b5ffe808a73cfd8f",
+  "group_id": "G02_RADIAL_FEM",
+  "batch": "20260910T1835Z-fresh02",
+  "source_strategy_ids": ["PRO-SELF"],
+  "prior_runtime_directory_lost": true,
+  "historical_receipts_reconstructed": false,
+  "execution": "new real runs from original uploaded input package",
+  "input_zip_sha256": "45a40a0f163c19ce2ae3903c0fcb729beaabff5a3c83b366b6da4ebd3a86f8df",
+  "status": "production_in_progress",
+  "formal_release_uploaded": false,
+  "note": "This recovery checkpoint is not compute_delivery.zip and does not claim a complete formal delivery."
+}
