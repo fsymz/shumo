@@ -1,0 +1,14 @@
+{
+  "request_id": "work-d8e7e514b5ffe808a73cfd8f",
+  "group_id": "G02_RADIAL_FEM",
+  "batch": "20260910T1731Z-fresh01",
+  "model": "GPT-6 Astra Pro",
+  "source_strategy_ids": ["PRO-SELF"],
+  "input_zip_sha256": "45a40a0f163c19ce2ae3903c0fcb729beaabff5a3c83b366b6da4ebd3a86f8df",
+  "historical_artifacts_present": false,
+  "new_run_required": true,
+  "no_history_or_other_groups_used": true,
+  "stage": "source_implementation",
+  "state": "not_computed",
+  "not_a_formal_delivery": true
+}
