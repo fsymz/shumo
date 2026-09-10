@@ -1,0 +1,167 @@
+{
+  "actor_id": "GPT-6 Astra Pro | current ChatGPT conversation | independent G03 production",
+  "bindings": {
+    "evaluator_fingerprint": "255473f0166d61144a6919e3dbc8fa3f91b4b3df64ca888e67ba3547d41842f6",
+    "evaluator_sha256": "08bdaccc3a849bd453cd64b393d099f3b375d4b75e3847352e6c4ab71737e5e0",
+    "execution_context_sha256": "49b462d90dac6c0074cd8a2eb622609874c2cb9a4dcbd76ffe6b707e5afbfbe4",
+    "official_input_fingerprint": "61bd17101a666275f91fedcca267cff6b9ba7ffd178715bcf8c484a748926c86",
+    "official_rules_sha256": "fe45f4f470ac88d416310edc443e379f54eba1d7320c941bc4ea3b539bc02f74",
+    "parent_request_id": "work-599694cade166c88cfc08721",
+    "parent_request_sha256": "b2249f9d4aa9df2d5d778f08f3f625713f31676c41a1cfe7c90c95ff085afc19",
+    "raw_proposals_fingerprint": "9256a6cb02e6bf2fbc94ed8d0a8c04b7dc2df5f7701d5bc6be0a6cfefb4e7b90",
+    "semantics_sha256": "b4e06c8ec32fbab2fa5cf6a3e2c221849eb950edcdbafd25d8477cf1682bf813"
+  },
+  "evaluator_fingerprint": "255473f0166d61144a6919e3dbc8fa3f91b4b3df64ca888e67ba3547d41842f6",
+  "kind": "compute",
+  "request_id": "work-df18bf44578cade0b3becc5b",
+  "runs": [
+    {
+      "method_id": "ANV_Q1",
+      "experiment_id": "ANV_Q1_MAIN",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q1_MAIN_assessment/output.json",
+      "receipt_path": "runs/ANV_Q1_MAIN_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q1",
+      "experiment_id": "ANV_Q1_SPACE",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q1_SPACE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q1_SPACE_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q1",
+      "experiment_id": "ANV_Q1_TIME",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q1_TIME_assessment/output.json",
+      "receipt_path": "runs/ANV_Q1_TIME_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q1",
+      "experiment_id": "ANV_Q1_BALANCE",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q1_BALANCE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q1_BALANCE_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q1",
+      "experiment_id": "ANV_Q1_TIME_BASELINE",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q1_TIME_BASELINE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q1_TIME_BASELINE_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q2",
+      "experiment_id": "ANV_Q2_MAIN",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q2_MAIN_assessment/output.json",
+      "receipt_path": "runs/ANV_Q2_MAIN_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q2",
+      "experiment_id": "ANV_Q2_SPACE",
+      "status": "failed",
+      "reason": "Both spatial-budget initializations are counted: v001 72x72 reached an event but JSON serialization failed; v00296x96 was killed by memory limit. Requested two full-horizon refinements are incomplete. Additional96x96 attempts are separately charged to MAIN and never relabelled as free SPACE runs.",
+      "output_path": "runs/ANV_Q2_SPACE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q2_SPACE_assessment_receipt.json",
+      "failure_diagnostic": "Both spatial-budget initializations are counted: v001 72x72 reached an event but JSON serialization failed; v00296x96 was killed by memory limit. Requested two full-horizon refinements are incomplete. Additional96x96 attempts are separately charged to MAIN and never relabelled as free SPACE runs."
+    },
+    {
+      "method_id": "ANV_Q2",
+      "experiment_id": "ANV_Q2_TIME",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q2_TIME_assessment/output.json",
+      "receipt_path": "runs/ANV_Q2_TIME_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q2",
+      "experiment_id": "ANV_Q2_BALANCE",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q2_BALANCE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q2_BALANCE_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q3",
+      "experiment_id": "ANV_Q3_MAIN",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q3_MAIN_assessment/output.json",
+      "receipt_path": "runs/ANV_Q3_MAIN_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q3",
+      "experiment_id": "ANV_Q3_EVENT_REVIEW",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q3_EVENT_REVIEW_assessment/output.json",
+      "receipt_path": "runs/ANV_Q3_EVENT_REVIEW_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q3",
+      "experiment_id": "ANV_Q3_TAIL_MEAN",
+      "status": "failed",
+      "reason": "The48x48 tail-mean scenario completed through7days; the96x96 scenario was killed by memory limit (receipt returncode -9). Both2/2initializations count. Independent96x96 full-horizon and tightened temporal scenario observations are absent; no nominal-scenario or duplicated arrays substituted.",
+      "output_path": "runs/ANV_Q3_TAIL_MEAN_assessment/output.json",
+      "receipt_path": "runs/ANV_Q3_TAIL_MEAN_assessment_receipt.json",
+      "failure_diagnostic": "The48x48 tail-mean scenario completed through7days; the96x96 scenario was killed by memory limit (receipt returncode -9). Both2/2initializations count. Independent96x96 full-horizon and tightened temporal scenario observations are absent; no nominal-scenario or duplicated arrays substituted."
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_MAIN",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q4_MAIN_assessment/output.json",
+      "receipt_path": "runs/ANV_Q4_MAIN_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_SPACE",
+      "status": "failed",
+      "reason": "72x72 trajectory reached its first strict event, then v001 NumPy int64 JSON serialization failed. Its genuine prefix is retained. Only one budgeted initialization remained; a new96x96 full-horizon run supplies independent main refinement. No third run or fabricated72x72 continuation was substituted; the requested two full common-horizon spatial refinements are incomplete.",
+      "output_path": "runs/ANV_Q4_SPACE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q4_SPACE_assessment_receipt.json",
+      "failure_diagnostic": "72x72 trajectory reached its first strict event, then v001 NumPy int64 JSON serialization failed. Its genuine prefix is retained. Only one budgeted initialization remained; a new96x96 full-horizon run supplies independent main refinement. No third run or fabricated72x72 continuation was substituted; the requested two full common-horizon spatial refinements are incomplete."
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_TIME",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q4_TIME_assessment/output.json",
+      "receipt_path": "runs/ANV_Q4_TIME_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_BALANCE",
+      "status": "executed",
+      "reason": "Actual independent computations and common-evaluator assessment; executed is not a claim that numerical targets passed.",
+      "output_path": "runs/ANV_Q4_BALANCE_assessment/output.json",
+      "receipt_path": "runs/ANV_Q4_BALANCE_assessment_receipt.json"
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_HOLD_RADIUS",
+      "status": "not_applicable",
+      "reason": "The assigned design makes extension conditional on no nominal completion by72h. The actual nominal48x48 strict endpoint is before72h; both radius functions have identical knots and linear interpolation on the entire preceding interval. This is a conditional statement for this unresolved grid model, not a grid-converged physical drying claim.",
+      "evidence_path": "runs/ANV_Q4_HOLD_RADIUS_evidence/evidence.json"
+    },
+    {
+      "method_id": "ANV_Q4",
+      "experiment_id": "ANV_Q4_FIXED_RADIUS",
+      "status": "failed",
+      "reason": "Fixed-radius appendix4 48x48 trajectory completed through72h; the96x96 attempt was terminated by the runtime OOM killer, as shown by returncode -9 and memory.events. Both initializations count against the budget2. No completed96x96 trajectory or independent temporal scenario refinement is claimed.",
+      "output_path": "runs/ANV_Q4_FIXED_RADIUS_assessment/output.json",
+      "receipt_path": "runs/ANV_Q4_FIXED_RADIUS_assessment_receipt.json",
+      "failure_diagnostic": "Fixed-radius appendix4 48x48 trajectory completed through72h; the96x96 attempt was terminated by the runtime OOM killer, as shown by returncode -9 and memory.events. Both initializations count against the budget2. No completed96x96 trajectory or independent temporal scenario refinement is claimed."
+    }
+  ],
+  "schema_version": "1.0"
+}
