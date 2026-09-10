@@ -1,0 +1,34 @@
+name: G01 stage03 transport probe (NOT formal delivery)
+on:
+  push:
+    paths:
+      - '.github/workflows/stage03_g01_20260910T173132Z_transport_probe.yml'
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Test draft release and binary asset transport
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, json, hashlib, urllib.request, urllib.parse
+          repo=os.environ['REPO']
+          headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10'}
+          def request(url,data,content_type):
+              h=dict(headers);h['Content-Type']=content_type
+              req=urllib.request.Request(url,data=data,headers=h,method='POST')
+              with urllib.request.urlopen(req,timeout=60) as response:
+                  return json.load(response)
+          payload={'tag_name':'stage03-G01-RFV-20260910T173132Z-transport-probe','target_commitish':'main','name':'G01 transport probe - NOT formal compute delivery','draft':True,'prerelease':True,'body':'Transport capability test only. No formal compute_delivery.zip is uploaded here. Request work-114cfd3a7836e5c8881adfce. Preserve this distinction from the final delivery.'}
+          release=request('https://api.github.com/repos/'+repo+'/releases',json.dumps(payload).encode(),'application/json')
+          data=b'TRANSPORT TEST ONLY - NOT FORMAL COMPUTE DELIVERY\nwork-114cfd3a7836e5c8881adfce\nG01_RADIAL_FV\n'
+          upload=release['upload_url'].split('{')[0]+'?name=transport-probe.txt'
+          asset=request(upload,data,'application/octet-stream')
+          print(json.dumps({'probe_only':True,'release_id':release['id'],'release_page':release['html_url'],'asset_id':asset['id'],'bytes':asset['size'],'sha256':hashlib.sha256(data).hexdigest(),'formal_delivery_uploaded':False},indent=2))
+          PY
