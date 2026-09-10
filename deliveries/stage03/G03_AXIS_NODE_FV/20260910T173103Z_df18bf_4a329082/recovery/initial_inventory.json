@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "request_id": "work-df18bf44578cade0b3becc5b",
+  "group_id": "G03_AXIS_NODE_FV",
+  "batch_id": "20260910T173103Z_df18bf_4a329082",
+  "input_archive": "route_complete_initial_G03_AXIS_NODE_FV(3).zip",
+  "input_archive_sha256": "4a329082f9acf9cee005d985941d0eb088c2f5f25a8c52f7814a5397a0dfa7a3",
+  "source_strategy_ids": [
+    "S00-CODEX",
+    "S03",
+    "PRO-SELF"
+  ],
+  "prior_artifacts_in_runtime": false,
+  "prior_execution_evidence_reused": false,
+  "status": "initial_input_verified_production_not_yet_run",
+  "remote_complete_delivery": false,
+  "executor": "GPT-6 Astra Pro, current ChatGPT conversation; portable_pro local Python execution; no external model called",
+  "scope": "Only this supplied packet; no other groups, public solutions, or historical result files read."
+}
