@@ -1,0 +1,46 @@
+{
+  "request_id": "work-df18bf44578cade0b3becc5b",
+  "group_id": "G03_AXIS_NODE_FV",
+  "batch_id": "20260910T173103Z_df18bf_4a329082",
+  "full_task_completed": false,
+  "local_zip": {
+    "name": "G03_compute_delivery.zip",
+    "bytes": 1760871489,
+    "sha256": "26ec01d9ec8c5bc5349ec18c3931e34829088b2db5930720d97532d527c0361c",
+    "archive_entries": 485
+  },
+  "local_byte_chunks": {
+    "count": 17,
+    "regular_chunk_bytes": 104857600,
+    "last_chunk_bytes": 83149889,
+    "all_sizes_and_sha256_checked": true,
+    "merged_zip_size_and_sha256_identical": true
+  },
+  "cold_unpacked_consumer_passed": true,
+  "cold_common_scoring_replay_identical": [1, 2, 3, 4],
+  "new_PDE_integrations_in_cold_check": 0,
+  "experiment_status_counts": {
+    "executed": 13,
+    "failed": 4,
+    "not_applicable": 1
+  },
+  "numerical_precision_passed": false,
+  "formal_release_created": false,
+  "formal_release_url": null,
+  "formal_assets_uploaded": [],
+  "formal_uploaded_bytes": 0,
+  "formal_remote_sizes_verified": false,
+  "formal_remote_sha256_verified": false,
+  "actual_remote_artifacts": [
+    "recovery/initial_inventory.json",
+    "checkpoint/node_fv.py.z85.txt",
+    "checkpoint/solver_checkpoint.json.zlib.b64",
+    "checkpoint/restore_checkpoint.py",
+    "response.json"
+  ],
+  "response_local_bytes": 10400,
+  "response_local_sha256": "ec7bbf1b8441497d97a1120fff39caf868f2707a808ed8ae5fabcc88df69c875",
+  "response_remote_readback_git_blob_sha1": "104fbecb0e0cd0d05d683c8fa71593df0c07cb56",
+  "response_local_and_remote_git_blob_match": true,
+  "limitation": "Current GitHub actions expose no Release-create or binary-asset-upload operation. Text writes work. No authenticated gh CLI is present in runtime; direct network attempt failed DNS. A source checkpoint or response upload is not the complete result delivery."
+}
