@@ -1,0 +1,9 @@
+{
+  "probe_only": true,
+  "endpoint": "http://128.24.160.169:443/g01-probe",
+  "expected_bytes": 35,
+  "expected_sha256": "a3396756aad974342e22789d97a3fa2c052572cc0b9fa6bc30fbe703cd0d5ded",
+  "expires_unix": 1789064017.0320177,
+  "accepted": false,
+  "formal_delivery_uploaded": false
+}
