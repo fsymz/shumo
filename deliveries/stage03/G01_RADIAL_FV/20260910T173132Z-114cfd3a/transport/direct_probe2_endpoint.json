@@ -1,0 +1,7 @@
+{
+  "endpoint": "http://172.215.223.216:443/g01-probe",
+  "expires_unix": 1789064446.12865,
+  "accepted": false,
+  "probe_only": true,
+  "formal_delivery_uploaded": false
+}
