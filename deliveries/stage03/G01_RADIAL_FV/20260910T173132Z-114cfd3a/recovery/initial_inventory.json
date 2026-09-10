@@ -1,0 +1,27 @@
+{
+  "request_id": "work-114cfd3a7836e5c8881adfce",
+  "group_id": "G01_RADIAL_FV",
+  "batch_id": "20260910T173132Z-114cfd3a",
+  "source_strategy_ids": [
+    "PRO-SELF",
+    "S02",
+    "S06",
+    "S07"
+  ],
+  "input_zip_sha256": "cf8886c26f7963bbd201c35e94ffed191724972f61c8d71afb74e40d7f7122f5",
+  "retained_before_this_task": [
+    "route_complete_initial_G01_RADIAL_FV(3).zip"
+  ],
+  "prior_source_or_results_reused": false,
+  "prior_execution_receipts_reconstructed": false,
+  "remote_group_path_probe": "deliveries/stage03/G01_RADIAL_FV returned HTTP404",
+  "startup_template_preflight_passed": true,
+  "production_status": "not_started",
+  "delivery_status": "not_uploaded",
+  "actor": "GPT-6 Astra Pro / current ChatGPT session; no provider API model identifier is available",
+  "github_repository": "fsymz/shumo",
+  "github_release_creation_tool_available": false,
+  "github_release_asset_upload_tool_available": false,
+  "github_cli_installed": false,
+  "github_cli_token_present": false
+}
