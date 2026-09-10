@@ -5,5 +5,6 @@
   "expected_sha256": "a3396756aad974342e22789d97a3fa2c052572cc0b9fa6bc30fbe703cd0d5ded",
   "expires_unix": 1789064017.0320177,
   "accepted": false,
-  "formal_delivery_uploaded": false
+  "formal_delivery_uploaded": false,
+  "finished_unix": 1789064018.4607773
 }
