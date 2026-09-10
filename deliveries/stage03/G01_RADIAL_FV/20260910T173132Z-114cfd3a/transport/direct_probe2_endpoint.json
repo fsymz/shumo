@@ -3,5 +3,6 @@
   "expires_unix": 1789064446.12865,
   "accepted": false,
   "probe_only": true,
-  "formal_delivery_uploaded": false
+  "formal_delivery_uploaded": false,
+  "finished_unix": 1789064447.6467648
 }
